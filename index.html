@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <button id="btnChat" onclick="chatActive()">CHAT</button>
+    <div id="chat" class ="">
+        <h2>CHAT EN LINEA</h2>
+    </div>
+
+    <h1>FIGURAS GEOMETRICAS</h1>
+    <!-- se usa id para poder identificar c/U -->
+    <div id="fila">
+        <div id="contBotones">  
+            <h2>BOTONES</h2>
+
+            <button onclick="fcirculo()">CIRCULO</button>  <!-- se crea el boton para utilizar y se genere el cambio del cuadro a un circulo -->
+            <button onclick="frectangulo()">RECTANGULO</button>
+            <button onclick="frombo()">ROMBO</button>
+            <button onclick="arriba()">ARRIBA</button>
+            <button onclick="abajo()">ABAJO</button>
+            <button onclick="izquierda()">IZQUIERDA</button>
+            <button onclick="derecha()">DERECHA</button>
+            <button onclick="diagonal1()">DIAGONALARRIBAIZQUIERDA</button>
+            <button onclick="diagonal2()">DIAGONALARRIBADERECHA</button>
+            <button onclick="diagonal3()">DIAGONALABAJOIZQUIERDA</button>
+            <button onclick="diagonal4()">DIAGONALABAJODERECHA</button>
+        </div>
+    
+        <div id="contFigura"> 
+            <h2>FIGURA</h2>
+            <div id="figura"> <!-- se crea figura para crear el cuadro pequeño -->
+        </div>
+    
+    </div>
+    
+
+</div>
+
+<div>
+
+<!-- se crea el contope para id, se pone number por que vamos a tomar valores numericos y se da valor1 al dato que va ingresar -->
+<div id="ContOperaciones">
+    <h2>CAPTURAR DATOS</h2>
+    <input type="number" id="valor1">  <!-- // se usa input para los valores numericos -->
+    <select name="#" id="operaciones">
+        <option value ="+">+</option>
+        <option value ="-">-</option>
+        <option value ="*">*</option>
+        <option value ="/">/</option>
+    </select>
+    <input type="number" id="valor2">
+    <button onclick="operaciones()">=</button>
+    <input type="number" id="respuesta">
+
+    <script src="js/main.js"></script>
+</div>
+</div>
+
+</body>
+</html>
